@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+} 
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+
+}
+
+.navlist{
+ width: 70%;
+display: flex;
+/* background-color: rgb(12, 13, 14); */
+align-items: center;
+
+}
+
+
+.logo{
+    width : 17% ;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+
+    width: 50%;
+   border: 3px solid rgb(143, 146, 146);
+   border-radius: 50%;
+  
+     
+}
+ .navlist li{
+       list-style: none;
+       padding: 5px 30px;
+      
+ }
+
+ .navlist li a {
+   color: rgb(219, 207, 207);   
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+ }
+ .navlist li a:hover{
+     color: grey;
+ }
+
+.rightnav{
+    width:30%;
+    text-align:right ;
+    padding: 0 5px;
+    /* background-color: blueviolet; */
+}
+
+#search{
+    padding:3px;
+    font-size: 17px;
+    border: 2px solid rgb(14, 11, 7);
+    border-radius: 9px;
+
+}
+
+.background1{
+    background: rgba(48, 47, 47, 0.941) ;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.background{
+    background: rgba(40, 38, 38, 0.7) url('../img/background1.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.firstsection{
+    height:100vh;
+    
+    }
+
+.box-main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        max-width: 50%;
+        margin: auto;
+        height:80%;
+        }
+.firsthalf{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+
+.sechalf {
+     width: 30%;
+    
+ 
+
+  }     
+
+  .sechalf img{
+      width: 90%;
+      border: 4px solid rgb(109, 109, 99);
+      border-radius: 60%;
+      display: block;
+      margin: auto;
+      
+  }
+ .text-big{
+    font-size:35px;
+ }
+
+ .text-small{
+     font-size: 15px;
+ }
+   
+.btn{
+    padding: 7px 16px;
+    margin: 10px 0;
+    border: 2px solid rgb(224, 220, 220);
+    border-radius: 7px;
+    background:none;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+
+}
+
+.section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+}
+.sectiontag{
+    font-size: 40px;
+    padding: 15px 0;
+
+}
+
+.secondleft{
+    flex-direction: row-reverse;
+}
+.firstpara{
+    padding:0 60px;
+}
+
+.thumbnail img{
+    width: 200px;
+    border: 2px solid black;
+    border-radius:15px;
+    margin-top: 22px ;
+    height: 130px;
+}
+.contact{
+
+    background-color: rgb(242, 241, 249);
+    height: 90vh;
+
+}
+.text-center{
+   text-align: center;
+   padding:20px 0;
+   font-family: 'Ubuntu', sans-serif;
+   font-size: 30px;
+
+}
+.contact1{
+    max-width :50%;
+    margin:auto;
+
+}
+
+.contact1-input{
+    width: 100%;
+    font-size: 14px;
+    padding: 3px;
+    border: 2px solid grey;
+    border-radius: 2px;
+    margin: 10px 0;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.btn-dark{
+
+    color: #000;
+    border: 1px solid rgb(12, 1, 1);
+    border-radius: 5px;
+}
+
+ .textfooter{
+    text-align: center;
+    padding:15px 100px  ;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(236, 233, 233);
+ }
+
+
+.burger {
+    display: none;
+position: absolute;
+cursor: pointer;
+top: 15px;
+right: 5%;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+ @media only screen and (max-width:1110px){
+       .navlist{
+       flex-direction: column;
+       }
+    .navbar{
+        flex-direction: column;
+        transition: all .7s ease-out;
+        height: 400px;
+    }
+    .rightnav{
+        text-align: center;
+    }
+#search{
+    width: 100%;
+}
+.box-main{
+    flex-direction: column-reverse;
+    max-width: 100%;
+}
+.burger{
+    display: block;
+}
+
+.h-nav-resp{
+    height: 48px;
+
+}
+.v-class-resp{
+    opacity: 0;
+}
+.section{
+    flex-direction: column-reverse;
+}
+.text-big{
+    text-align: center;
+}
+.text-small{
+    text-align: center;
+}
+.button{
+    text-align: center;
+}
+.firstpara{
+    padding: 0px 0px;;
+}
+}
+ 
